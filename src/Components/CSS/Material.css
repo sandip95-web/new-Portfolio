@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Press+Start+2P&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
+
+.m-main{
+    height: 100vh;
+}
+.m-title{
+    color: #FFE3A9;
+    font-family: 'Comfortaa';
+    padding-left: 1rem;
+}
+.m-card{
+    margin: 1rem 1rem;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid red;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background-color: #F1F0C0;
+}
+.mc-main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.m-card img{
+    width: 100%;
+    border-radius: 50%;
+}
+.m-card h1{
+    padding: 1rem 0rem;
+    color: #006E7F;
+}
+button{
+    font-family: fantasy;
+    color: #5F7161;
+}
+@media(max-width:480px)
+{
+    .mc-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .m-card{
+        width: 60%;
+    }
+}

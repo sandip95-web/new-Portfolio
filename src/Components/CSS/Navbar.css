@@ -1,0 +1,32 @@
+.main-nav{
+    display: flex;
+    border:2px solid white;
+    width: 20%;
+    border-radius: 1rem 0rem 1rem 0rem;
+    z-index: 2;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left:50%;
+    transform: translateX(-50%);
+    top:90%;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+}
+.main-nav a{
+    background: transparent;
+    margin:1rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.active{
+    color: white;
+}
+@media (max-width:480px) {
+    .main-nav{  
+      width:90%;      
+    }
+    .main-nav a{
+       font-size: 1.7rem;
+    }
+}

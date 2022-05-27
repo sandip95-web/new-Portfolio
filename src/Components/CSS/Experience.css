@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Press+Start+2P&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');:root{
+    --width-xs:10%;
+    --width-ss:50%;
+    --width-ms:75%;
+    --width-lg:99%;
+    --width-xl:100%;
+    --secondary-text:'Abel';
+    --primary-text:'Righteous';
+    --font-ss:1rem;
+    --font-ms:2rem;
+    --font-lg:3rem;
+    --font-xl:4rem;
+    --color:#FFE3A9;
+}
+.e-main{
+    width:100%;
+    height: 100vh;
+}
+.e-title h1{
+    font-family:var(--primary-text);
+   color:#FFE3A9;
+}
+.e-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    color:#EB5353;
+}
+.e-img img{
+    border-radius: 50%;
+}
+@media(max-width:480px)
+{
+    .e-main{
+        margin-top: 35rem;
+    }
+ .e-img{
+     height: 100%;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ .e-img img{
+order: 1;
+ }   
+ .e-img h2{
+     order: 2;
+     font-size: 0.8rem;
+ }
+}

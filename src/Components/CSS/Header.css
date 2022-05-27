@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
+:root{
+    --width-xs:10%;
+    --width-ss:50%;
+    --width-ms:75%;
+    --width-lg:99%;
+    --width-xl:100%;
+    --secondary-text:'Abel';
+    --primary-text:'Righteous';
+    --font-ss:1rem;
+    --font-ms:2rem;
+    --font-lg:3rem;
+    --font-xl:4rem;
+}
+.h-main{
+    width:var(--width-xl);
+    display: flex;
+    height: 100vh;
+}
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+.h-left{
+width:100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+}
+.h-text{
+    width: var(--width-ms);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h-text h1{
+    color: #4E944F;
+    font-size: var(--font-xl);
+    font-family: var(--primary-text);
+    padding:1rem 0rem 1rem 0rem;
+}
+.h-text h2{
+    font-size: var(--font-lg);
+    font-family: var(--secondary-text); 
+    color: #9A86A4;
+    padding:1rem 0rem 1rem 0rem;
+}
+.h-text p{
+    font-size: var(--font-ss);
+    font-family: var(--secondary-text);
+    padding:1rem 0rem 1rem 0rem;
+}
+.h-img-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:-55%;
+}
+.h-img{
+    width: var(--width-ss);
+    position: relative;
+    margin-top:1rem;
+    order:2;    
+}
+.h-img img{
+    width: 100%;
+    border-radius: 50%;
+   
+}
+.h-bg{
+    position: absolute;
+   z-index: -1;
+   animation:action 5s ease-in-out infinite;
+    background-color: #5F7161;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50% at 50% 50%);
+}
+@keyframes action{
+    0%{
+        left:0rem
+    }
+    5%{
+        left:0.5rem
+    }
+    15%{
+        left:1rem;
+    }
+    25%{
+        left:0rem;
+    }
+    50%{
+        left:-0.5rem
+    }
+    100%{
+        left:-1rem
+    }
+}
+.h-button button{
+    border-radius: 0.5rem;
+    font-size: var(--font-ss);
+    padding: 0.5rem 0.5rem;
+    margin-top:1rem;
+    outline: none;
+    background: #7FB5FF;
+    font-family:'comfortaa';
+    font-weight: 900; 
+}
+.h-button button:hover{
+    background-color:orange;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+.h-right{
+    width:var(--width-xs)
+}
+.h-title{
+    width:40%;
+    height:35px;
+    overflow: hidden;
+   color:#8E3200;
+}
+.h-title-wrapper{
+    font-size: var(--font-ms);
+    font-family: 'Comfortaa';
+    font-weight: 999;
+    height: 100%;
+    animation:action2 3s ease-in-out infinite alternate;
+}
+@keyframes action2{
+    25%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY((-80px));
+    }
+    100%{
+        transform: translateY(-120px);
+    }
+}
+
+
+
+.h-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.r-link{
+    display: flex;
+    flex-direction: column;
+}
+.r-link a{
+    color:white;
+    font-size: 30px;
+    padding: 0.5rem 0;
+}
+.r-link a:hover{
+    color:orange;
+    cursor: pointer;
+}
+
+
+@media (max-width:480px) {
+    .h-main{
+        background: url('../../image/home.jpg') center center/cover no-repeat;
+        height:100vh;
+        flex-direction: column;
+    }
+    .h-img-btn{
+        margin: 0;
+    }
+    .h-text h1{
+        font-size: var(--font-lg);
+        font-weight: 999;
+        color:orange;
+    }
+    .h-text h2{
+        font-size: var(--font-ms);
+    }
+    .h-title{
+        width:100%;
+        height: 30px;
+    }
+    .h-title-wrapper{
+        font-size: 1.5rem;
+        font-weight: 999;
+        color:#F73D93;
+    }
+    .h-right{
+        margin:1rem;
+    }
+    .r-link{
+       flex-direction: row;
+    }
+    .h-right a{
+        color:#F9D923;
+        padding:3rem 1rem;
+        font-size: 3rem;
+    }
+    @keyframes action2{
+        25%{
+            transform: translateY(-30px);
+        }
+        50%{
+            transform: translateY((-60px));
+        }
+        100%{
+            transform: translateY(-90px);
+        }
+    }
+       
+}

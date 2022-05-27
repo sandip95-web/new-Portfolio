@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
+
+:root{
+    --width-xs:10%;
+    --width-ss:50%;
+    --width-ms:75%;
+    --width-lg:99%;
+    --width-xl:100%;
+    --secondary-text:'Abel';
+    --primary-text:'Righteous';
+    --font-ss:1rem;
+    --font-ms:2rem;
+    --font-lg:3rem;
+    --font-xl:4rem;
+}
+
+.a-main{
+    height: 100vh;
+}
+.a-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 0rem;
+}
+.a-text h5{
+  font-family: 'Comfortaa';
+  font-size: var(--font-ss); 
+  color: #F4BFBF;  
+}
+.a-text h1{
+    font-family: 'Abel';
+    font-size: var(--font-ms);
+    color:#FFE3A9;
+}
+.am-container{
+ display: grid;
+ grid-template-columns: 35% 50%;
+ gap:15%;
+ 
+}
+.a_me{
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,transparent,skyblue,transparent);
+    display: grid;
+    place-items:center;
+    margin:0rem 2rem;
+}
+.a_img{
+    border:0.2rem solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+}
+.a_img img{
+    width: 100%;
+}
+.a_img:hover{
+    transform: rotate(0deg);
+    transition: 0.5s ease;
+}
+.a-card{
+    display: flex;
+    gap: 1rem;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:20vh;
+    border-radius: 2rem;
+    background-color: rgba(128, 128, 128, 0.274);
+    width: var(--width-ss);
+    font-size: 1.3rem;
+    font-family: 'Comfortaa';
+    padding: 1rem 0rem;
+    color: #9A86A4;
+}
+p{
+    padding: 1rem 0rem;
+    font-family: 'Abel';
+    font-size: var(--font-ms);
+}
+button{
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: skyblue;
+    padding: 1rem 1rem;
+}
+
+.text{
+    color: #CCF3EE;
+}
+
+/* ----------------------mobile version------------ */
+@media(max-width:480px){
+    .a-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .am-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .a-card{
+        margin-top: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .text{
+        font-size:1.5rem;
+        padding: 1rem 0.3rem;
+    }
+    .a-text{
+        margin:1rem 0rem;
+    }
+    button{
+        margin: 1rem 0rem;
+    }
+}
