@@ -9,7 +9,7 @@
     padding-left: 1rem;
 }
 .m-card{
-    margin: 1rem 1rem;
+    margin: 4rem 1rem;
     width: 20%;
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +19,11 @@
     padding: 1rem 1rem;
     border-radius: 1rem;
     background-color: #F1F0C0;
+    box-shadow: 0.5rem 0.5rem rgba(128, 128, 128, 0.537);
+}
+.m-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 .mc-main{
     display: flex;
@@ -36,6 +41,19 @@ button{
     font-family: fantasy;
     color: #5F7161;
 }
+.m-dot{
+    width: 100%;
+    height: 1rem;
+}
+.circle{
+    width: 10%;
+    height: 100%;
+}
+.p-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media(max-width:480px)
 {
     .mc-main{
@@ -44,5 +62,9 @@ button{
     }
     .m-card{
         width: 60%;
+        margin-top: 1rem;
+    }
+    .m-card:hover{
+        transform: none;
     }
 }

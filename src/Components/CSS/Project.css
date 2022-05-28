@@ -1,4 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
+
 .p-main{
-    height:100vh;
-    margin-top: 55rem;
+    height:100vh;    
+}
+.p-main h1{
+    font-family: 'Comfortaa';
+    color: #FFE3A9;
+    padding-bottom: 3rem;
+}
+.p-submain{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.p-card{
+    margin: 10rem; 
+    width: 20%;
+    border:2px solid red;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #FFDAAF;
+    box-shadow: 0.5em 0.5rem rgba(128, 128, 128, 0.641);
+}
+.p-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    
+}
+.p-card img{
+    width: 100%;
+    border-radius: 50%;
+    padding: 1rem 1rem;
+}
+.circle{
+    color: wheat;
+    font-size: 0.2rem;
+}
+button{
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+button:hover{
+   background-color:#EC9B3B;
+   transition: 0.5s ease;
+}
+.shape{
+    width: 50%;
+    height: 100%;
+    background-color: #cdc2aec7;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    position: absolute;
+    z-index: -1;
+    right:0;
+}
+.shape2{
+    width: 50%;
+    height: 100%;
+    background-color: #cdc2aec7;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+    position: absolute;
+    z-index: -1;
+    left:0;
+}
+@media(max-width:480px)
+{
+    .p-main{
+        margin-top: 75rem;
+    }
+    .p-card{
+        width: 70%;
+        margin:10rem 0rem;
+        height: 100%;
+    }
+    .p-main h1{
+        padding-bottom: 4rem;
+    }
+    .shape{
+        width: 50%;
+        height: 50%;
+    }
+    .shape2{
+        width: 40%;
+        height: 50%;
+    }
+    
 }

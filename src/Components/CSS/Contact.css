@@ -1,3 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Press+Start+2P&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
 .c-main{
     height: 100vh;
+    margin-top: 10rem;
+}
+.info-box{
+    width: 100%;
+    height: 30vh;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0rem;
+}
+.info-box h2 h3{
+    font-size: 0.2rem;
+}
+.c-right{
+    width: 100%;
+}
+.c-t1{
+    color: #C2DED1;
+}
+h2,h1{
+    text-align: center;
+    color: #FFCC8F;
+}
+.c-text{
+font-family: 'Abel';
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+     
+}
+form input,textarea{
+    background-color: #203239;
+    width: 50%;
+    border-radius: 0.2rem;
+    padding: 1rem 0.5rem;
+    border:2px solid #7D1E6A;
+    color: white;
+}
+form input{
+    outline: none;
+    text-decoration: none;
+}
+.c-sub{
+    display: flex;
+    width: 70%;
+    margin:4rem auto;  
+
+}
+@media (max-width:480px) {
+    .c-main{
+        margin-top: 0rem;
+    }
+    .c-sub{
+        flex-direction: column;
+    }
+    form input,textarea{
+        width: 100%;
+        margin: 1rem 0rem;
+    }
 }

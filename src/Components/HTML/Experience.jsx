@@ -8,6 +8,7 @@ const Experience = () => {
           <div className="e-title">
             <h1>Experience</h1>
           </div>
+         
           <div className="e-img">
             <h2>Currently NO Experience !</h2>
             <img src={image} alt="" />

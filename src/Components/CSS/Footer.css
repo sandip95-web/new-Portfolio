@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Odibee+Sans&family=Open+Sans:wght@300&family=Press+Start+2P&family=Raleway:ital,wght@0,300;1,500&family=Righteous&display=swap');
+
+.f-main{
+    height: 20vh;
+    background-color: #8cc0deae;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.link a{
+    font-family: 'Abel';
+    color: #FFE3A9;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+.f-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.media a{
+    font-size: 2rem;
+    padding: 0rem 1rem;
+}
+@media (max-width:480px){
+    .link{
+        display: none;
+    }
+    .f-main{
+        margin-top: 20rem;
+    }
+    .f-sub{
+        padding-top: 1rem;
+        align-items: unset;
+        justify-content:unset ;
+    }
+    copyr h4{
+        text-align: center;
+    }
+}
